@@ -1,8 +1,5 @@
-/* style.css */
-
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background: linear-gradient(to right, #1b3a2b, #5c4033);
     color: white;
     text-align: center;
@@ -11,6 +8,7 @@ body {
 nav {
     background-color: #3d2b1f;
     padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 nav a {
@@ -18,6 +16,8 @@ nav a {
     margin: 15px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -26,20 +26,25 @@ nav a:hover {
 
 section {
     padding: 40px;
+    margin: 20px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
 }
 
 img.avatar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 10px auto;
+    margin: 20px auto;
     display: block;
+    border: 3px solid #c9a66b;
 }
 
 img {
     width: 250px;
     border-radius: 15px;
     margin: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 button {
@@ -50,6 +55,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
     margin: 5px;
+    font-weight: bold;
 }
 
 button:hover {
