@@ -17,7 +17,17 @@
 
 <section>
 <h1>Bienvenue sur le site de Gil</h1>
-<p>Je m'appelle Gil. J'adore le football, jouer à la PlayStation et voyager. Bienvenue sur mon site personnel.</p>
+<img src="avatar.jpg" alt="Avatar de Gil" class="avatar">
+<p>Je m'appelle Gil. J'adore le football, la PlayStation et voyager. Bienvenue sur mon site personnel où je vous présente mes passions et mes rêves.</p>
+
+<h2>Musique d'ambiance</h2>
+<audio id="bg-music">
+  <source src="musique.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas l'audio.
+</audio>
+<br>
+<button onclick="document.getElementById('bg-music').play()">▶️ Play</button>
+<button onclick="document.getElementById('bg-music').pause()">⏸️ Pause</button>
 </section>
 
 </body>
