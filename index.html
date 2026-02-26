@@ -2,67 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Site - Gil</title>
+    <title>Gil | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#production">Production scolaire</a>
-        <a href="#videos">Mes vidéos</a>
-        <a href="#passions">Mes passions</a>
-        <a href="#site-reve">Mon site de rêve</a>
+        <a href="index.html">Accueil</a>
+        <a href="production.html">Scolaire</a>
+        <a href="videos.html">Vidéos</a>
+        <a href="passions.html">Passions</a>
+        <a href="site-reve.html">Projets</a>
     </nav>
 
-    <section id="accueil">
-        <h1>Bienvenue sur le site de Gil</h1>
-        <img src="avatar.jpg" alt="Avatar de Gil" class="avatar">
-        <p>Je m'appelle Gil. J'adore le football, la PlayStation et voyager. Bienvenue sur mon site personnel !</p>
-        
-        <h3>🎵 Musique d'ambiance</h3>
-        <audio id="bg-music">
-            <source src="musique.mp3" type="audio/mpeg">
-        </audio>
-        <button onclick="document.getElementById('bg-music').play()">▶️ Jouer</button>
-        <button onclick="document.getElementById('bg-music').pause()">⏸️ Pause</button>
-    </section>
-
-    <section id="production">
-        <h1>📚 Production scolaire</h1>
-        <p>Voici le padlet réalisé en groupe sur "Boule de Suif" :</p>
-        <a href="https://sctourcoing-my.sharepoint.com/..." class="link-gold">Voir mon Padlet</a>
-    </section>
-
-    <section id="videos">
-        <h1>🎬 Mes vidéos</h1>
-        <video width="400" controls>
-            <source src="video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
-        </video>
-    </section>
-
-    <section id="passions">
-        <h1>⚽ Mes passions</h1>
-        <h3>Football</h3>
-        <p>J'adore jouer au foot et regarder les matchs.</p>
-        <img src="pied.jpg" alt="Football">
-
-        <h3>PlayStation</h3>
-        <p>J'aime jouer à la Play avec mes amis.</p>
-        <img src="jouer.jpg" alt="PS5">
-    </section>
-
-    <section id="site-reve">
-        <h1>🌍 Mon site de rêve</h1>
-        <h3>Voyages : Portugal et Brésil</h3>
-        <img src="Portugal.jpg" alt="Portugal">
-        <img src="brésil.jpg" alt="Brésil">
-        
-        <h3>Joueur préféré : Cristiano Ronaldo</h3>
-        <img src="ronaldo.jpg" alt="CR7">
-    </section>
-
+    <main>
+        <section>
+            <img src="avatar.jpg" alt="Gil" class="avatar">
+            <h1>Bienvenue</h1>
+            <p>Je m'appelle Gil. Passionné de sport, de gaming et de découvertes.</p>
+            
+            <div class="audio-player">
+                <audio id="music"><source src="musique.mp3" type="audio/mpeg"></audio>
+                <button onclick="document.getElementById('music').play()">PLAY</button>
+                <button onclick="document.getElementById('music').pause()">PAUSE</button>
+            </div>
+        </section>
+        <img src="plage.jpg" alt="Plage" style="border-radius: 10px; opacity: 0.8;">
+    </main>
 </body>
 </html>
+    
