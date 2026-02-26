@@ -1,58 +1,81 @@
-/* "corps" devient "body" */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(to right, #1b3a2b, #5c4033);
-    color: white;
+    padding: 0;
+    background-color: #0f0f0f; /* Noir profond */
+    color: #e0e0e0; /* Gris clair pour ne pas agresser les yeux */
     text-align: center;
-    scroll-behavior: smooth; /* Permet le défilement fluide entre sections */
 }
 
-/* "navigation" devient "nav" */
 nav {
-    background-color: #3d2b1f;
-    padding: 15px;
-    position: sticky; /* Reste en haut quand on descend */
-    top: 0;
-    z-index: 1000;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-bottom: 2px solid #c9a66b; /* Ligne dorée */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #c9a66b;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #c9a66b; /* Couleur dorée au survol */
+    color: white;
+    text-shadow: 0 0 10px #c9a66b;
+}
+
+main {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    color: #c9a66b;
+    text-transform: uppercase;
 }
 
 section {
-    padding: 80px 20px;
-    min-height: 100vh; /* Chaque section prend tout l'écran */
-    border-bottom: 1px solid rgba(201, 166, 107, 0.3);
-}
-
-.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #c9a66b;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
 }
 
 img {
-    max-width: 300px;
-    border-radius: 15px;
-    margin: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin: 15px 0;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #c9a66b;
+    object-fit: cover;
 }
 
 button {
-    background-color: #2e5e4e;
-    color: white;
-    padding: 10px 20px;
+    background: #c9a66b;
+    color: #000;
     border: none;
-    border-radius: 10px;
+    padding: 12px 25px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+}
+
+button:hover {
+    background: white;
 }
